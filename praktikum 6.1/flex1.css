@@ -1,0 +1,26 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1080px;
+    height: 190px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 7em;
+    margin-top: 10em;
+    color: lightgray;
+  
+}
+
+.flex{
+    background-color: lightgray;
+    width: 199px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.bag1{
+    width: 344px;
+}

@@ -1,0 +1,52 @@
+body{
+    display: flex;
+}
+ 
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.Nav{
+    height: 609px;
+    width: 220px;
+    background-color: pink;
+    order: 0;
+ 
+}
+
+.Header{
+    height: 100px;
+    width: 1100px;
+    background-color: khaki;
+    order: 0;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+}
+
+.Article{
+    height: 409px;
+    width: 810px;
+    background-color:white;
+    order: 3;
+
+}
+
+.Aside{
+    height: 409px;
+    width: 290px;
+    background-color: cyan;
+    order: 3;
+
+}
+
+.Footer{
+    height: 100px;
+    width: 1100px;
+    background-color: khaki;
+    order: 4;    
+}

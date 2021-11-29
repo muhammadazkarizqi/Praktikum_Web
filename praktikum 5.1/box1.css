@@ -1,0 +1,55 @@
+    
+.kuningbox{
+    margin-left: 55px;
+    float: left;
+}
+
+.kuning{
+    box-sizing: content-box;
+    border: 2px solid black;
+    width: 250px;
+    height: 590px;
+    background-color: yellow;
+}
+
+.merahbox{
+    margin-left: 3.5em;
+    float: left;
+}
+
+.merah{
+    box-sizing: content-box;
+    border: 2px solid black;
+    width: 250px;
+    height: 590px;
+    background-color: darkorange;
+}
+
+
+.hijaubox{
+    margin-left: 3.5em;
+    float: left;
+}
+
+.hijau{
+    box-sizing: content-box;
+    border: 2px solid black;
+    width: 250px;
+    height: 590px;
+    background-color:lightgreen;
+}
+
+.birubox{
+    margin-left: 3.5em;
+    float: left;
+}
+
+.biru{
+    box-sizing: content-box;
+    border: 2px solid black;
+    width: 250px;
+    height: 590px;
+    background-color: cyan;
+ 
+}
+

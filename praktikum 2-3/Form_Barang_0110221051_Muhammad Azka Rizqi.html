@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormBarang</title>
+</head>
+<body>
+    <header> <br>
+    <div style="display: flex; margin-left: 90px; font-family: 'Trebuchet MS';">
+    <nav style="align-items: center; border-style: solid;">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <a href="" style="margin: 4px">Home</a>| 
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <a href="" style="margin: 4px">Generate Link</a>| 
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <a href="" style="margin: 4px">Transaction History</a>| 
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <a href="" style="margin: 4px">Policy</a>| 
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <a href="" style="margin: 4px">Logout</a>| 
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        
+
+    </nav></div></header><br><br>
+    
+        
+    <div style="display: flex; align-items: center; font-family: 'Trebuchet MS';">
+            <div style="margin-bottom: 470px;">
+            <form action="/client.php" method="post" enctype="multipart/form-data">
+                <img src="baju.jpg" alt="" style="width: 220px; height: 220px; margin-left: 80px;"><br>
+                <div style="margin-left: 82px;">
+           
+                <input type="file" name="photo" >
+            </div>
+            </form>
+        </div>
+            
+            <aside>
+            <div style="padding-left: 100px; margin-bottom: 200px;">
+                <form method="post" action=" /action.php">
+                    Title Here : <input type="text" name="username" style="margin-left: 60px; padding-left: 140px;" />
+                    <br><br>
+                    Description : <textarea name="description" cols="40" rows="7" style="margin-left: 51px;"></textarea><br><br>
+                    Account Number : <input type="text" name="username" style="margin-left: 15px; padding-left: 140px;" /><br><br>
+                    Bank : <select name="bank" style="margin-left: 98px; padding-left: 219px;">
+                            <option>BCA</option>
+                            <option>Mandiri</option>
+                            <option>CIMB Niaga</option>
+                            <option>BRI Syariah</option>
+                    </select><br><br>
+                    
+                    Account Holder : <input type="text" name="username" style="margin-left: 22px; padding-left: 140px;" /><br><br>
+                    Transaction :  <select name="bank" style="margin-left: 52px;">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        
+                        
+                </select><br><p style="margin-left: 150px;">* Jika transaksi lebih dari 3 orang, pilih 3 pada list</p>
+                <input type="checkbox" id="phone" name="phone" value="phone" style="margin-left: 150px;">
+                <label for="phone">Send To Phone</label><br>
+                <input type="checkbox" id="email" name="email" value="email" style="margin-left: 150px;">
+                <label for="email">Send To Email</label><br><br>
+
+                Send to Email : <input type="text" name="email" id="email" style="margin-left: 33px; padding-left: 140px;" /><br><br>
+                Send to Phone : <input type="text" name="phone" id="phone" style="margin-left: 31px; padding-left: 140px;" /><br><br>
+
+                <form action="/action.php" method="post">
+                    <input style="font-size: 18px; margin-left: 149px; background-color: darkgreen; color: white;"  
+                    width="50px" type="submit" value="Generate Link"  /></form>
+                
+
+
+
+
+                </form>                    
+            </div>
+        </aside>
+    </div>
+         
+</body>
+</html>
