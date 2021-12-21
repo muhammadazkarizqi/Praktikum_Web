@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 Kurs</title>
+    <script>
+
+        function fungsiKurs(){
+            let pilihan = (document.getElementById("pilihanKurs").value);
+            let bil1 = Number(document.getElementById("nilaiAwal").value);
+            let bil2 = Number(document.getElementById("nilaiAkhir").value);
+
+                let kurs
+                if (pilihan == "dollar" ) {
+                    kurs = bil1*9915
+                } else if (pilihan == "dollarsng"){
+                    kurs = bil1*13472
+                } else if ( pilihan == "ringgit"){
+                    kurs = bil1*874
+                } else if (pilihan == "yen"){
+                    kurs = bil1*120
+                } else if (pilihan == "euro"){
+                    kurs = bil1*15888
+                } else {
+                    kurs = bil1*3592
+                }
+                document.getElementById("nilaiAkhir").value=kurs;
+                }
+    </script>
+
+    <style>     
+        body{
+            margin-top: 225px;
+
+        }   
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        th{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        .tabelnilai{
+            border: 2px solid black;
+        }
+        .fs{
+            padding: 10px;
+            background-color: lightgray;
+        }
+        .form{
+            width: fit-content; 
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form" class="form">
+        <fieldset class="fs">
+            <legend>Kurs Rupiah-Mata Uang Asing</legend>
+            <table class="tabelnilai">
+                <tr>
+                    <th>Nominal Uang</th>
+                    <th>Valas</th>
+                    <th>Nilai Rupiah</th>
+                </tr>
+                <tr>
+                    <td>
+                    <input type="text" id="nilaiAwal" value="" onchange="fungsiKurs()">
+                    </td>
+                    <td>
+                        <select id="pilihanKurs">
+                            <option value="dollar">Dollar US</option>
+                            <option value="dollarsng">Dollar Singapore</option>
+                            <option value="ringgit">Ringgit Malaysia</option>
+                            <option value="yen">Yen Jepang</option>
+                            <option value="euro">Euro</option>
+                            <option value="sar">Riyal Arab Saudi</option>
+                        </select>
+                    </td>
+                    <td><input type="text" id="nilaiAkhir" value="" onchange="fungsiKurs()"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

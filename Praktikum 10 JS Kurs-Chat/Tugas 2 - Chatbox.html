@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 ChatBox</title>
+    <script>
+        function fungsiChat(){
+            let text = document.getElementById("areaKetik").value;
+            let chat = document.createElement("section");
+            chat.innerHTML = text;
+            document.getElementById("chatBox").appendChild(chat);
+        }
+    </script>
+    <style>
+        body{
+            margin-left: 28em;
+        }
+        .chat{
+            width: 400px; 
+            position: fixed; 
+            border: 2px solid black; 
+            padding: 2px;
+            background-color: cornsilk;
+        }
+        .section1{
+            height: 200px; 
+            width: 120%;
+        }
+        .chatbox{
+            display: flex; 
+            flex-direction: column; 
+            flex-wrap: nowrap;             
+        }
+        .ketik{
+            width: 85.2%; 
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="chatApp" class="chat">
+        <section class="section1">
+            <section id="chatBox" class="chatbox"></section>
+        </section>
+        <section>
+            <input type="text" id="areaKetik" class="ketik">
+            <button id="kirim" onclick="fungsiChat()">Send</button>
+        </section>
+    </div>
+</body>
+</html>
